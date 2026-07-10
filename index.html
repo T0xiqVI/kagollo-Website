@@ -1,6 +1,12 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Kagollo Trading & Projects Pty Ltd</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kagollo Trading & Projects Pty Ltd</title>
 
-<style> \*{ margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',sans-serif; }
+<style>
+*{ margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',sans-serif; }
 
 body{ background:#071d13; color:white; }
 
@@ -10,20 +16,16 @@ header{ position:fixed; top:0; width:100%; background:rgba(7,29,19,0.9); backdro
 
 nav a{ color:white; text-decoration:none; margin-left:20px; font-weight:600; }
 
-.hero{ min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:120px 20px 60px; background: linear-gradient(rgba(7,29,19,0.8),rgba(7,29,19,0.95)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80') center/cover; }
+.hero{ min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:120px 20px 60px; background: linear-gradient(rgba(7,29,19,0.8),rgba(7,29,19,0.95)), url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1400&q=80') center/cover; }
 
 .hero h1{ font-size:3.5rem; margin-bottom:20px; }
-
 .hero h1 span{ color:#d4a017; }
-
 .hero p{ font-size:1.2rem; color:#d7e4db; margin-bottom:35px; }
 
 .btn{ display:inline-block; padding:14px 32px; border-radius:40px; background:#d4a017; color:#071d13; text-decoration:none; font-weight:700; }
 
 section{ padding:90px 8%; }
-
 .section-title{ text-align:center; font-size:2.4rem; margin-bottom:50px; }
-
 .section-title span{ color:#d4a017; }
 
 .about{ max-width:900px; margin:auto; text-align:center; font-size:1.1rem; color:#d7e4db; line-height:1.8; }
@@ -31,71 +33,131 @@ section{ padding:90px 8%; }
 .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px; }
 
 .card{ background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.12); border-radius:20px; padding:20px; text-align:center; overflow:hidden; transition:0.4s; }
-
 .card:hover{ transform:translateY(-8px); border-color:#d4a017; }
-
 .card img{ width:100%; height:200px; object-fit:cover; border-radius:15px; margin-bottom:15px; transition:0.5s ease; }
-
 .card:hover img{ transform:scale(1.05); }
-
 .card h3{ color:#d4a017; margin-bottom:15px; font-size:1.4rem; }
-
 .card p{ color:#d7e4db; line-height:1.5; }
 
 .contact-box{ background:linear-gradient(135deg,#0b5d3b,#0e7a4d); border-radius:25px; padding:50px; text-align:center; }
-
 .contact-box p{ margin:12px 0; }
 
 footer{ text-align:center; padding:25px; color:#9fb6a6; border-top:1px solid rgba(255,255,255,0.1); }
 
 .whatsapp{ position:fixed; bottom:20px; right:20px; width:65px; height:65px; border-radius:50%; background:#25D366; color:white; display:flex; align-items:center; justify-content:center; font-size:30px; text-decoration:none; }
 
-@media(max-width:768px){ header{ flex-direction:column; gap:10px; }
-
-.hero h1{ font-size:2.4rem; } } </style> </head>
+@media(max-width:768px){ 
+  header{ flex-direction:column; gap:10px; }
+  .hero h1{ font-size:2.4rem; } 
+}
+</style>
+</head>
 
 <body>
 
-<header> <div class="logo">Kagollo Trading & Projects</div> <nav> <a href="#about">About</a> <a href="#services">Services</a> <a href="#contact">Contact</a> </nav> </header>
+<header>
+  <div class="logo">Kagollo Trading & Projects</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-<section class="hero"> <div> <h1><span>Integrated Pest Management</span> Specialists</h1> <p>Protecting Homes, Businesses & Communities</p> <a href="#contact" class="btn">Get Free Inspection</a> </div> </section>
+<section class="hero">
+  <div>
+    <h1><span>Integrated Pest Management</span> Specialists</h1>
+    <p>Protecting Homes, Businesses & Communities</p>
+    <a href="#contact" class="btn">Get Free Inspection</a>
+  </div>
+</section>
 
-<section id="about"> <h2 class="section-title">About <span>Us</span></h2> <div class="about"> Kagollo Trading & Projects Pty Ltd provides professional pest management, sanitation, and environmental control services for residential, commercial, and industrial clients. </div> </section>
+<section id="about">
+  <h2 class="section-title">About <span>Us</span></h2>
+  <div class="about">
+    Kagollo Trading & Projects Pty Ltd provides professional pest management, sanitation, and environmental control services for residential, commercial, and industrial clients.
+  </div>
+</section>
 
-<section id="services"> <h2 class="section-title">Our <span>Services</span></h2>
+<section id="services">
+  <h2 class="section-title">Our <span>Services</span></h2>
+  <div class="grid">
 
-<div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1612831455541-88d4d7e8eaa3?auto=format&fit=crop&w=600&q=80" alt="Rodent Control">
+      <h3>🐀 Rodent Control</h3>
+      <p>Professional rat and mouse extermination services.</p>
+    </div>
 
-<div class="card"> <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=600&q=80" alt="Rodent Control"> <h3>🐀 Rodent Control</h3> <p>Professional rat and mouse extermination services.</p> </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=600&q=80" alt="Weed Control">
+      <h3>🌿 Weed Control</h3>
+      <p>Effective weed management and prevention services.</p>
+    </div>
 
-<div class="card"> <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=80" alt="Weed Control"> <h3>🌿 Weed Control</h3> <p>Effective weed management and prevention services.</p> </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80" alt="Cockroach Control">
+      <h3>🪳 Cockroach Control</h3>
+      <p>Safe and reliable cockroach extermination, treatment, and prevention services.</p>
+    </div>
 
-<div class="card"> <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80" alt="Cockroach Control"> <h3>🪳 Cockroach Control</h3> <p>Safe and reliable cockroach extermination, treatment, and prevention services.</p> </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1597157625120-2c9f6f0a3a4e?auto=format&fit=crop&w=600&q=80" alt="Snake Control">
+      <h3>🐍 Snake Control</h3>
+      <p>Professional snake removal and prevention services.</p>
+    </div>
 
-<div class="card"> <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=600&q=80" alt="Snake Control"> <h3>🐍 Snake Control</h3> <p>Professional snake removal and prevention services.</p> </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=600&q=80" alt="Ant Control">
+      <h3>🐜 Ant Control</h3>
+      <p>Targeted ant treatment for indoor and outdoor infestations.</p>
+    </div>
 
-<div class="card"> <img src="https://images.unsplash.com/photo-1598514983318-2f64f8f4796c?auto=format&fit=crop&w=600&q=80" alt="Ant Control"> <h3>🐜 Ant Control</h3> <p>Targeted ant treatment for indoor and outdoor infestations.</p> </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Termite Control">
+      <h3>🪵 Termite Control</h3>
+      <p>Comprehensive termite inspections and treatment services.</p>
+    </div>
 
-<div class="card"> <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=600&q=80" alt="Termite Control"> <h3>🪵 Termite Control</h3> <p>Comprehensive termite inspections and treatment services.</p> </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=600&q=80" alt="Microbial Fogging">
+      <h3>🦠 Microbial Fogging</h3>
+      <p>Professional microbial fogging and sanitation treatments.</p>
+    </div>
 
-<div class="card"> <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=600&q=80" alt="Microbial Fogging"> <h3>🦠 Microbial Fogging</h3> <p>Professional microbial fogging and sanitation treatments.</p> </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1625943553852-781c3b1af7e3?auto=format&fit=crop&w=600&q=80" alt="Flea Control">
+      <h3>🦟 Flea Control</h3>
+      <p>Fast and effective flea treatment solutions.</p>
+    </div>
 
-<div class="card"> <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?auto=format&fit=crop&w=600&q=80" alt="Flea Control"> <h3>🦟 Flea Control</h3> <p>Fast and effective flea treatment solutions.</p> </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" alt="Bed Bug Control">
+      <h3>🛏️ Bed Bug Control</h3>
+      <p>Professional bed bug inspection and treatment services.</p>
+    </div>
 
-<div class="card"> <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=80" alt="Bed Bug Control"> <h3>🛏️ Bed Bug Control</h3> <p>Professional bed bug inspection and treatment services.</p> </div>
+  </div>
+</section>
 
-</div> </section>
+<section id="contact">
+  <div class="contact-box">
+    <h2 class="section-title" style="margin-bottom:20px;">Contact <span>Us</span></h2>
+    <p><strong>Oupa Nkoana</strong></p>
+    <p>📞 067 780 0042</p>
+    <p>✉ kagolotrading@gmail.com</p>
+    <p>🌐 https://www.kagolotrading.co.za</p>
+    <p>📍 16 Flip Street, Claremont</p>
+    <br>
+    <a href="https://wa.me/27677800042" target="_blank" class="btn">WhatsApp Now</a>
+  </div>
+</section>
 
-<section id="contact"> <div class="contact-box"> <h2 class="section-title" style="margin-bottom:20px;">Contact <span>Us</span></h2>
+<footer>
+  &copy; 2026 Kagollo Trading & Projects Pty Ltd — All Rights Reserved
+</footer>
 
-<p><strong>Oupa Nkoana</strong></p> <p>📞 067 780 0042</p> <p>✉ kagolotrading@gmail.com</p> <p>🌐 https://www.kagolotrading.co.za</p> <p>📍 16 Flip Street, Claremont</p>
+<a class="whatsapp" href="https://wa.me/27677800042" target="_blank">💬</a>
 
-<br>
-
-<a href="https://wa.me/27677800042" target="blank" class="btn"> WhatsApp Now </a> </div> </section>
-
-<footer> &copy; 2026 Kagollo Trading & Projects Pty Ltd — All Rights Reserved </footer>
-
-<a class="whatsapp" href="https://wa.me/27677800042" target="blank">💬</a>
-
-</body> </html>
+</body>
+</html>
