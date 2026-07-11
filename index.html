@@ -10,74 +10,40 @@
 html{ scroll-behavior:smooth; }
 body{ background:#071d13; color:white; overflow-x:hidden; }
 
-header{ 
-  position:fixed; top:0; width:100%; background:rgba(7,29,19,0.6); 
-  backdrop-filter:blur(20px); padding:20px 8%; display:flex; 
-  justify-content:space-between; align-items:center; z-index:1000; 
-  border-bottom:1px solid rgba(212,160,23,0.15); transition:0.4s;
-}
-header.scrolled{ background:rgba(7,29,19,0.95); }
-.logo{ font-size:1.8rem; font-weight:900; color:#d4a017; letter-spacing:1px; text-shadow:0 0 15px rgba(212,160,23,0.3); }
-nav a{ color:white; text-decoration:none; margin-left:28px; font-weight:600; position:relative; transition:0.3s; }
-nav a::after{ content:''; position:absolute; bottom:-5px; left:0; width:0; height:2px; background:#d4a017; transition:0.3s; }
+header{ position:fixed; top:0; width:100%; background:rgba(7,29,19,0.85); backdrop-filter:blur(20px); padding:20px 8%; display:flex; justify-content:space-between; align-items:center; z-index:1000; border-bottom:1px solid rgba(212,160,23,0.15); }
+.logo{ font-size:1.8rem; font-weight:900; color:#d4a017; letter-spacing:1px; }
+nav a{ color:white; text-decoration:none; margin-left:28px; font-weight:600; transition:0.3s; }
 nav a:hover{ color:#d4a017; }
-nav a:hover::after{ width:100%; }
 
-.hero{ 
-  min-height:100vh; display:flex; align-items:center; justify-content:center; 
-  text-align:center; padding:140px 20px 80px; 
-  background: linear-gradient(135deg,rgba(7,29,19,0.85),rgba(7,29,19,0.95)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80') center/cover fixed;
-  position:relative; overflow:hidden;
-}
-.hero::before{ content:''; position:absolute; top:0; left:0; right:0; bottom:0; background:radial-gradient(circle at 50% 50%, rgba(212,160,23,0.1) 0%, transparent 70%); }
-.hero h1{ font-size:4.2rem; margin-bottom:22px; line-height:1.1; text-shadow:0 4px 30px rgba(0,0,0,0.6); animation:fadeUp 1s ease; }
-.hero h1 span{ color:#d4a017; background:linear-gradient(90deg,#d4a017,#f0c542); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
-.hero p{ font-size:1.3rem; color:#d7e4db; margin-bottom:40px; animation:fadeUp 1.2s ease; }
+.hero{ min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:140px 20px 80px; background: linear-gradient(135deg,rgba(7,29,19,0.85),rgba(7,29,19,0.95)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80') center/cover; }
+.hero h1{ font-size:4.2rem; margin-bottom:22px; }
+.hero h1 span{ color:#d4a017; }
+.hero p{ font-size:1.3rem; color:#d7e4db; margin-bottom:40px; }
 
-.btn{ 
-  display:inline-block; padding:16px 38px; border-radius:50px; 
-  background:linear-gradient(135deg,#d4a017,#b8860b); color:#071d13; 
-  text-decoration:none; font-weight:800; transition:0.4s; 
-  box-shadow:0 10px 30px rgba(212,160,23,0.4); border:2px solid transparent;
-  animation:fadeUp 1.4s ease; margin:8px;
-}
-.btn:hover{ transform:translateY(-4px) scale(1.03); box-shadow:0 15px 40px rgba(212,160,23,0.6); border-color:#d4a017; }
+.btn{ display:inline-block; padding:16px 38px; border-radius:50px; background:linear-gradient(135deg,#d4a017,#b8860b); color:#071d13; text-decoration:none; font-weight:800; transition:0.4s; box-shadow:0 10px 30px rgba(212,160,23,0.4); margin:10px; cursor:pointer; }
+.btn:hover{ transform:translateY(-4px); box-shadow:0 15px 40px rgba(212,160,23,0.6); }
 
-section{ padding:110px 8%; position:relative; }
-.section-title{ text-align:center; font-size:2.8rem; margin-bottom:60px; position:relative; }
+section{ padding:110px 8%; }
+.section-title{ text-align:center; font-size:2.8rem; margin-bottom:60px; }
 .section-title span{ color:#d4a017; }
-.section-title::after{ content:''; width:80px; height:4px; background:linear-gradient(90deg,#d4a017,transparent); position:absolute; bottom:-15px; left:50%; transform:translateX(-50%); border-radius:2px; }
 
-.about{ max-width:950px; margin:auto; text-align:center; font-size:1.18rem; color:#d7e4db; line-height:1.9; background:rgba(255,255,255,0.03); padding:40px; border-radius:20px; border:1px solid rgba(212,160,23,0.15); }
+.about{ max-width:950px; margin:auto; text-align:center; font-size:1.18rem; color:#d7e4db; line-height:1.9; background:rgba(255,255,255,0.03); padding:40px; border-radius:20px; }
 
 .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:32px; }
-.card{ background:linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02)); border:1px solid rgba(255,255,255,0.08); border-radius:26px; padding:24px; text-align:center; overflow:hidden; transition:0.5s cubic-bezier(.4,0,.2,1); position:relative; backdrop-filter:blur(10px); }
-.card::before{ content:''; position:absolute; inset:0; background:linear-gradient(135deg,rgba(212,160,23,0.15),transparent 50%); opacity:0; transition:0.5s; }
-.card:hover::before{ opacity:1; }
-.card:hover{ transform:translateY(-12px); border-color:rgba(212,160,23,0.6); box-shadow:0 25px 50px rgba(0,0,0,0.4); }
-.card img{ width:100%; height:230px; object-fit:cover; border-radius:20px; margin-bottom:20px; transition:0.6s ease; }
-.card:hover img{ transform:scale(1.08); }
-.card h3{ color:#d4a017; margin-bottom:14px; font-size:1.5rem; font-weight:700; }
-.card p{ color:#d7e4db; line-height:1.7; font-size:1rem; }
+.card{ background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.08); border-radius:26px; padding:24px; text-align:center; transition:0.4s; }
+.card:hover{ transform:translateY(-10px); border-color:#d4a017; }
+.card img{ width:100%; height:230px; object-fit:cover; border-radius:20px; margin-bottom:20px; }
+.card h3{ color:#d4a017; margin-bottom:14px; font-size:1.5rem; }
+.card p{ color:#d7e4db; line-height:1.7; }
 
-.contact-box{ background:linear-gradient(135deg,#0b5d3b,#0f7f51); border-radius:32px; padding:65px; text-align:center; box-shadow:0 25px 60px rgba(0,0,0,0.35); border:1px solid rgba(212,160,23,0.2); position:relative; overflow:hidden; }
-.contact-box::before{ content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle, rgba(212,160,23,0.1) 0%, transparent 70%); }
-.contact-box p{ margin:16px 0; font-size:1.1rem; position:relative; }
+.contact-box{ background:linear-gradient(135deg,#0b5d3b,#0f7f51); border-radius:32px; padding:65px; text-align:center; }
+.contact-box p{ margin:16px 0; font-size:1.1rem; }
 
-footer{ text-align:center; padding:30px; color:#9fb6a6; border-top:1px solid rgba(255,255,255,0.08); background:rgba(0,0,0,0.2); }
+footer{ text-align:center; padding:30px; color:#9fb6a6; border-top:1px solid rgba(255,255,255,0.08); }
 
-.whatsapp{ position:fixed; bottom:25px; right:25px; width:70px; height:70px; border-radius:50%; background:linear-gradient(135deg,#25D366,#1ebe5b); color:white; display:flex; align-items:center; justify-content:center; font-size:34px; text-decoration:none; box-shadow:0 12px 35px rgba(37,211,102,0.5); transition:0.4s; z-index:999; }
-.whatsapp:hover{ transform:scale(1.12) rotate(5deg); box-shadow:0 18px 45px rgba(37,211,102,0.7); }
+.whatsapp{ position:fixed; bottom:25px; right:25px; width:70px; height:70px; border-radius:50%; background:#25D366; color:white; display:flex; align-items:center; justify-content:center; font-size:34px; text-decoration:none; box-shadow:0 12px 35px rgba(37,211,102,0.5); z-index:9999; }
 
-@keyframes fadeUp{ from{ opacity:0; transform:translateY(30px); } to{ opacity:1; transform:translateY(0); } }
-
-@media(max-width:768px){ 
-  header{ flex-direction:column; gap:12px; padding:15px 5%; }
-  .hero h1{ font-size:2.8rem; }
-  .hero p{ font-size:1.1rem; }
-  .contact-box{ padding:45px 25px; }
-  nav a{ margin-left:15px; }
-} 
+@media(max-width:768px){ header{ flex-direction:column; gap:12px; } .hero h1{ font-size:2.8rem; } }
 </style>
 </head>
 
@@ -172,14 +138,18 @@ footer{ text-align:center; padding:30px; color:#9fb6a6; border-top:1px solid rgb
   <div class="contact-box">
     <h2 class="section-title" style="margin-bottom:20px;">Contact <span>Us</span></h2>
     <p><strong>Oupa Nkoana</strong></p>
-    <p>📞 067 780 0042</p>
-    <p>✉ kagolotrading@gmail.com</p>
-    <p>🌐 https://www.kagolotrading.co.za</p>
+    <p>📞 <a href="tel:0677800042" style="color:white; text-decoration:none;">067 780 0042</a></p>
+    <p>✉ <a href="mailto:kagolotrading@gmail.com" style="color:white; text-decoration:none;">kagolotrading@gmail.com</a></p>
+    <p>🌐 <a href="https://www.kagolotrading.co.za" target="_blank" rel="noopener" style="color:white; text-decoration:none;">www.kagolotrading.co.za</a></p>
     <p>📍 16 Flip Street, Claremont</p>
     <br>
-    <a href="https://wa.me/27677800042" target="_blank" class="btn">WhatsApp Now</a>
     
-    <a href="https://www.facebook.com/share/1EPCrbdyUh/" target="_blank" class="btn" style="background:linear-gradient(135deg,#1877F2,#0d5fcc);color:white;">📘 Visit Our Facebook Page</a>
+    <!-- WHATSAPP BUTTON -->
+    <a href="https://wa.me/27677800042" target="_blank" rel="noopener" class="btn">WhatsApp Now</a>
+    
+    <!-- FACEBOOK BUTTON - FIXED -->
+    <a href="https://www.facebook.com/share/1EPCrbdyUh/" target="_blank" rel="noopener noreferrer" class="btn" style="background:#1877F2;color:white;">📘 Visit Our Facebook Page</a>
+    
   </div>
 </section>
 
@@ -187,18 +157,8 @@ footer{ text-align:center; padding:30px; color:#9fb6a6; border-top:1px solid rgb
   &copy; 2026 Kagollo Trading & Projects Pty Ltd — All Rights Reserved
 </footer>
 
-<a class="whatsapp" href="https://wa.me/27677800042" target="_blank">💬</a>
-
-<script>
-// Header scroll effect
-window.addEventListener('scroll', function() {
-  if(window.scrollY > 50){
-    document.querySelector('header').classList.add('scrolled');
-  } else {
-    document.querySelector('header').classList.remove('scrolled');
-  }
-});
-</script>
+<!-- FLOATING WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/27677800042" target="_blank" rel="noopener">💬</a>
 
 </body>
 </html>
